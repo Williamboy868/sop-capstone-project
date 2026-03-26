@@ -24,9 +24,9 @@ const productsData = [
 ];
 
 const usersData = [
-  { id: 'USR-ADMIN', name: 'Admin User', email: 'admin@yenpoobi.com', role: 'ADMIN' as const, emailVerified: true },
-  { id: 'USR-MANAGER', name: 'Manager User', email: 'manager@yenpoobi.com', role: 'MANAGER' as const, emailVerified: true },
-  { id: 'USR-CASHIER', name: 'Cashier User', email: 'cashier@yenpoobi.com', role: 'CASHIER' as const, emailVerified: true }
+  { id: 'USR-ADMIN', name: 'Admin User', email: 'admin@shoprite.com', role: 'ADMIN' as const, emailVerified: true },
+  { id: 'USR-MANAGER', name: 'Manager User', email: 'manager@shoprite.com', role: 'MANAGER' as const, emailVerified: true },
+  { id: 'USR-CASHIER', name: 'Cashier User', email: 'cashier@shoprite.com', role: 'CASHIER' as const, emailVerified: true }
 ];
 
 async function main() {

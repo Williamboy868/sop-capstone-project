@@ -213,7 +213,7 @@ export default function CashierPage() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             amount: total,
-            email: (session?.user as any)?.email || 'customer@yenpoobi.com',
+            email: (session?.user as any)?.email || 'customer@shoprite.com',
             saleReference: `sale_${Date.now()}`,
           }),
         });
@@ -325,7 +325,7 @@ export default function CashierPage() {
       <div className="bg-primary text-primary-foreground px-6 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
           <ShoppingCart className="w-6 h-6" />
-          <h1 className="text-xl font-bold">Yenpoobi POS - Cashier</h1>
+          <h1 className="text-xl font-bold">{"🛒"}Shoprite - Cashier</h1>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-lg">

@@ -14,7 +14,7 @@ export default function BetterAuthUIProvider({ children }: { children: ReactNode
             authClient={authClient}
             navigate={router.push}
            social={{
-            providers: ["github", "google"]
+            providers: ["google"]
           }}
             replace={router.replace}
             onSessionChange={() => {

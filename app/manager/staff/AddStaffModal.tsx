@@ -106,7 +106,7 @@ export default function AddStaffModal() {
                 required
                 disabled={isPending}
                 className="w-full px-3 py-2 bg-background border border-border rounded-lg outline-none focus:ring-2 focus:ring-primary/50 transition-colors placeholder:text-muted-foreground/50"
-                placeholder="ama@yenpoobi.com"
+                placeholder="ama@shoprite.com"
               />
             </div>
             

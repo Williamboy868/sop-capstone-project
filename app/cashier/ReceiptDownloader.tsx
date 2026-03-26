@@ -21,7 +21,7 @@ export default function ReceiptDownloader({ completedSaleData, onDone }: Props) 
     doc.setFontSize(24);
     doc.setFont('helvetica', 'bold');
     doc.setTextColor(37, 99, 235); // Blue primary color
-    doc.text('Yenpoobi', 14, 25);
+    doc.text('Shoprite', 14, 25);
 
     doc.setFontSize(10);
     doc.setFont('helvetica', 'normal');
@@ -189,13 +189,13 @@ export default function ReceiptDownloader({ completedSaleData, onDone }: Props) 
     doc.setFontSize(10);
     doc.setFont('helvetica', 'bolditalic');
     doc.setTextColor(0, 0, 0);
-    doc.text('Thank you for shopping at Yenpoobi!', 74, footerY + 5, { align: 'center' });
+    doc.text('Thank you for shopping at Shoprite!', 74, footerY + 5, { align: 'center' });
 
     if (action === 'preview') {
       window.open(doc.output('bloburl'), '_blank');
     } else {
       const dateStr = new Date().toLocaleString().replace(/[\/:]/g, '-').replace(/,/g, '').replace(/\s/g, '_');
-      doc.save(`Yenpoobi_Receipt_${dateStr}.pdf`);
+      doc.save(`Shoprite_Receipt_${dateStr}.pdf`);
     }
   };
 
