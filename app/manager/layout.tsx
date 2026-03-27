@@ -49,7 +49,7 @@ export default function ManagerLayout({ children }: { children: React.ReactNode 
       <div className="bg-primary text-primary-foreground px-6 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
           <ShoppingCart className="w-6 h-6" />
-          <h1 className="font-bold">POS - Manager Portal</h1>
+          <h1 className="text-base font-semibold m-0 leading-none">POS - Manager Portal</h1>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-lg sm:flex">

@@ -64,7 +64,7 @@ export default function PrintReportButton({
 
       // Title
       doc.setFontSize(20);
-      doc.text('Yenpoobi Daily Closing Report', 14, 22);
+      doc.text('Shoprite Daily Closing Report', 14, 22);
 
       doc.setFontSize(10);
       doc.setTextColor(100);

@@ -44,7 +44,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       {/* Header */}
       <div className="bg-primary text-primary-foreground px-6 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
-          <ShoppingCart className="w-6 h-6" />
           <h1 className="text-xl font-bold">{"🛒"}Shoprite POS - Admin Dashboard</h1>
         </div>
         <div className="flex items-center gap-4">
