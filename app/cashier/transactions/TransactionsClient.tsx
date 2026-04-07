@@ -61,7 +61,7 @@ export default function TransactionsClient({ initialSales }: { initialSales: Sal
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground px-6 py-4 flex items-center justify-between shadow-md">
+      <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-4">
           <button 
             onClick={() => router.push('/cashier')}
@@ -77,7 +77,7 @@ export default function TransactionsClient({ initialSales }: { initialSales: Sal
         <button
           onClick={handleManualRefresh}
           disabled={isRefreshing}
-          className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg transition-colors disabled:opacity-50"
+          className="flex items-center gap-2 px-4 py-2 bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded-full transition-colors disabled:opacity-50"
         >
           <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
           <span className="text-sm font-medium">Refresh</span>

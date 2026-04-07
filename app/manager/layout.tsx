@@ -46,26 +46,26 @@ export default function ManagerLayout({ children }: { children: React.ReactNode 
 
     <div className="h-screen flex flex-col bg-background text-foreground">
       {/* Header */}
-      <div className="bg-primary text-primary-foreground px-6 py-4 flex items-center justify-between shadow-md">
+      <div className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-3">
-          <ShoppingCart className="w-6 h-6" />
-          <h1 className="text-base font-semibold m-0 leading-none">POS - Manager Portal</h1>
+          <ShoppingCart className="w-5 h-5 text-foreground" />
+          <h1 className="text-xl font-bold tracking-tight text-foreground m-0 leading-none">Manager Portal</h1>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 px-4 py-2 bg-primary-foreground/10 rounded-lg sm:flex">
+          <div className="hidden sm:flex items-center gap-2 px-4 py-2 bg-muted rounded-full text-sm font-medium text-muted-foreground border border-border">
             <Users className="w-4 h-4" />
             <span>Manager: {session.user?.name || 'User'}</span>
           </div>
           <Link
             href="/cashier"
-            className="px-4 py-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 rounded-lg transition-colors text-sm text-center"
+            className="px-4 py-2 bg-secondary hover:bg-secondary/80 rounded-full transition-colors text-sm text-center font-medium text-secondary-foreground"
           >
             Switch to Cashier
           </Link>
           <ThemeToggle />
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors text-sm"
+            className="flex items-center gap-2 px-4 py-2 hover:bg-destructive/10 text-destructive rounded-full transition-colors text-sm font-medium"
           >
             <LogOut className="w-4 h-4" />
             <span>Logout</span>
@@ -85,10 +85,10 @@ export default function ManagerLayout({ children }: { children: React.ReactNode 
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${
                     active
-                      ? 'bg-primary text-primary-foreground'
-                      : 'hover:bg-secondary'
+                      ? 'bg-foreground text-background shadow-sm'
+                      : 'hover:bg-muted text-muted-foreground hover:text-foreground'
                   }`}
                 >
                   <Icon className="w-5 h-5" />
